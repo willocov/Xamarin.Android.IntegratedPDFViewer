@@ -24,6 +24,8 @@ namespace Phoneword
             TextView translatedPhoneWord = FindViewById<TextView>(Resource.Id.TranslatedPhoneword);
             Button translateButton = FindViewById<Button>(Resource.Id.TranslateButton);
             Button translationHistoryButton = FindViewById<Button>(Resource.Id.TranslationHistoryButton);
+            Button scaleImageButton = FindViewById<Button>(Resource.Id.scaleImage);
+            Button webViewButton = FindViewById<Button>(Resource.Id.btnWebView);
 
             // Add code to translate number
             string translatedNumber = string.Empty;
@@ -48,6 +50,16 @@ namespace Phoneword
                 intent.PutStringArrayListExtra("phone_numbers", phoneNumbers);
                 StartActivity(intent);
             };
+            scaleImageButton.Click += (sender, e) =>
+            {
+
+                StartActivity(typeof(ScaleImageActivity));
+            };
+            webViewButton.Click += (sender, e) =>
+            {
+                StartActivity(typeof(InternalWebViewActivity));
+            };
+            
         }
     }
 }

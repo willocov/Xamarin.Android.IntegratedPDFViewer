@@ -36,4 +36,14 @@
 		android:id="@+id/TranslationHistoryButton"
 		android:layout_marginRight="0.0dp"
 		android:enabled="false" />
+	<Button
+		android:text="Scale Image View"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/scaleImage" />
+	<Button
+		android:text="WebView"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/btnWebView" />
 </LinearLayout>
